@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>QR Key</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+
+    .mdl-menu__item a {
+      text-decoration: none;
+    }
+    .material-icons.md-50 { font-size: 50px; }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout__header-row">
+          <h3>QR Key</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"><h7>(Alpha)</h7></div>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+          <i class="material-icons" role="presentation">share</i>
+          <span class="visuallyhidden">Share</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="add">
+          <li disabled class="mdl-menu__item">Share</li>
+          <li class="mdl-menu__item">
+            <a href="https://twitter.com/intent/tweet?url=https://friendlychat-a6420.firebaseapp.com/qrkey.html&text=QR Key">
+              <img src="https://www.gstatic.com/images/icons/material/system/1x/post_twitter_black_24dp.png" alt="Share on Twitter" /> twitter
+            </a>
+          </li>
+          <li class="mdl-menu__item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://friendlychat-a6420.firebaseapp.com/qrkey.html">
+              <img src="https://www.gstatic.com/images/icons/material/system/1x/post_facebook_black_24dp.png" alt="Share on Facebook" /> facebook
+            </a>
+          </li>
+          <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">
+            <a href="https://plus.google.com/share?url=https://friendlychat-a6420.firebaseapp.com/qrkey.html" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+              <img src="https://www.gstatic.com/images/icons/material/system/1x/post_gplus_black_24dp.png" alt="Share on Google+"/> google+
+            </a>
+          </li>
+          <li class="mdl-menu__item">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://friendlychat-a6420.firebaseapp.com/qrkey.html&mini=true&title=QR Key&summary=&source=">
+              <img src="https://www.gstatic.com/images/icons/material/system/1x/post_linkedin_black_24dp.png" alt="Share on LinkedIn" /> linkedin
+            </a>
+          </li>
+          <li class="mdl-menu__item">
+            <a href="http://www.tumblr.com/share?v=3&u=https://friendlychat-a6420.firebaseapp.com/qrkey.html&t=QR Key">
+              <img src="https://www.gstatic.com/images/icons/material/system/1x/post_tumblr_black_24dp.png" alt="Share on Tumblr"> tumblr
+            </a>
+          </li>
+          <li class="mdl-menu__item">
+            <a href="https://pinterest.com/pin/create/button/?url=https://friendlychat-a6420.firebaseapp.com/qrkey.html&media=Hello&description=QR Key">
+              <img src="https://www.gstatic.com/images/icons/material/system/1x/post_pinterest_black_24dp.png" alt="Share on Pinterest"> pinterest
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main class="mdl-layout__content">
+        <div id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
+              <img src="images/android-icon-192x192.png" width="200px" style="display: block; margin: 0 auto;" />
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Accurate Customer Analytics</h4>
+                <ul>
+                  <li>Simplify public hotspot WiFi maintenance</li>
+                  <li>Put the power in the user's hands, allow them to scan whenever, wherever.</li>
+                  <li>No need to retrain retail staff and rotate wifi passwords</li>
+                  <li>Customize login page to customer requirements</li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="/" class="mdl-button">See Demo of Login Page</a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+                    <i class="material-icons md-50">credit_card</i>
+                  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Control WiFi access using QR codes</h5>
+                  Wifi access can be monitored and controlled through our unique and complete web based QR flow
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+                    <i class="material-icons md-50">beenhere</i>
+                  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Accurate customer information</h5>
+                  Authorize customer's through social media accounts, and gain deeper access to your customers and find out how to better serve them to create repeat business.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+                    <i class="material-icons md-50">plus_one</i>
+                  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Nothing to Install</h5>
+                  The solution is entirely web based, even the advanced QR system. Creates a completely seemless and smooth oboarding system for the end-user.
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="mailto:virajranjankumar@gmail.com" class="mdl-button">Contact for more info</a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Technology</h4>
+                A complete web solution, simply click on the link below to get started. There is nothing to download or install.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="/" class="mdl-button">Open App</a>
+              </div>              
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">QR Key</div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="virajranjankumar@gmail.com">Contact Us</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="/" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Open App</a>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>
